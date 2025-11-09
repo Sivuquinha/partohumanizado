@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guilherme de Carvalho — Advogado especialista em parto e plano de saúde</title>
+
+  <meta name="description" content="Auxiliamos gestantes a garantir o direito ao parto normal pago pelo plano de saúde. Atendimento jurídico humanizado, rápido e eficaz.">
+  <meta name="author" content="Guilherme de Carvalho">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #d63384; /* tom rosa mais marcante */
+      --accent-dark: #b12c6d;
+      --bg: #fff6f8; /* rosa bem clarinho */
+      --text: #2d2a2a;
+      --muted: #5c5555;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #f0d9df;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+    }
+
+    .brand .logo {
+      background: var(--accent);
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 500px;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin: 0 0 16px;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .panel {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .panel img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    footer {
+      background: #ffeef3;
+      padding: 40px 20px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid #f0d9df;
+    }
+
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .img-grid img {
+      width: 100%;
+      border-radius: 12px;
+      height: 280px;
+      object-fit: cover;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .img-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Botão fixo WhatsApp */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #25d366;
+      color: white;
+      font-weight: 700;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: pulse 2.6s infinite;
+    }
+
+    @keyframes pulse {
+      0%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0.28)}
+      70%{transform:scale(1.03);box-shadow:0 0 0 10px rgba(37,211,102,0)}
+      100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0)}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <div>Guilherme de Carvalho</div>
+          <div style="font-weight:400; font-size:14px; color:var(--muted)">Advogado especialista em parto e plano de saúde</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#como">Como Funciona</a>
+        <a href="#familia">Alegria em Família</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Faça o plano de saúde pagar o parto normal — sem dor de cabeça.</h1>
+        <p>Auxiliamos gestantes a garantir que o plano cubra o parto normal. Atuamos no administrativo e, se necessário, na justiça. Atendimento rápido, humano e focado na mãe e no bebê.</p>
+        <a href="#contato" class="btn">Agendar Avaliação Gratuita</a>
+        <a href="#como" class="btn secondary">Entenda o Processo</a>
+      </div>
+      <div class="panel">
+        <img src="https://images.unsplash.com/photo-1615811361523-6c3a8c52f3b1?auto=format&fit=crop&w=1000&q=80" alt="Casal feliz com bebê após o parto">
+      </div>
+    </section>
+
+    <section id="como">
+      <h2>Como funciona</h2>
+      <p style="color:var(--muted)">Avaliação inicial → Notificação ao plano → Ação judicial emergencial (se necessário). Nós cuidamos de tudo para garantir seu atendimento no tempo certo.</p>
+      <div class="features">
+        <div class="card"><h3>1. Avaliação</h3><p>Analisamos contrato e prontuário para definir a estratégia ideal.</p></div>
+        <div class="card"><h3>2. Atendimento Administrativo</h3><p>Buscamos solução direta junto ao plano antes de acionar a Justiça.</p></div>
+        <div class="card"><h3>3. Medida Judicial</h3><p>Se houver recusa, entramos com liminar urgente para garantir o parto.</p></div>
+      </div>
+    </section>
+
+    <section id="familia">
+      <h2>Alegria em família</h2>
+      <p style="color:var(--muted)">Casais felizes com o bebê — o momento mais importante da vida com tranquilidade e amor.</p>
+      <div class="img-grid">
+        <img src="https://images.unsplash.com/photo-1615811361206-7e1e212bf63e?auto=format&fit=crop&w=1000&q=80" alt="Casal feliz com bebê no colo">
+        <img src="https://images.unsplash.com/photo-1616486820417-0f71cc4d9c62?auto=format&fit=crop&w=1000&q=80" alt="Mãe e pai sorrindo com o bebê recém-nascido">
+        <img src="https://images.unsplash.com/photo-1581594693702-67d3c39b7a78?auto=format&fit=crop&w=1000&q=80" alt="Família unida após o parto">
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p style="color:var(--muted)">Agende sua avaliação gratuita e receba orientação sobre o seu caso.</p>
+      <a class="btn" href="https://wa.me/5521995977007?text=Olá%2C%20quero%20avaliar%20meu%20caso%20de%20parto%20normal">Fale no WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Guilherme de Carvalho</strong><br>
+    <small>Todos os direitos reservados © <span id="ano"></span></small>
+  </footer>
+
+  <a href="https://wa.me/5521995977007?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20sobre%20meu%20parto%20normal" target="_blank" class="whatsapp-btn">💬 Fale com um advogado agora</a>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
